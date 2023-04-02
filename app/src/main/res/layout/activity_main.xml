@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:paddingLeft="@dimen/margen_horizontal_actividad"
+    android:paddingTop="@dimen/margen_vertical_actividad"
+    android:paddingRight="@dimen/margen_horizontal_actividad"
+    android:paddingBottom="@dimen/margen_vertical_actividad"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@color/casi_blanco"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="40sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/dificultadesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/casi_blanco"
+        android:text="@string/dificultades"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RadioGroup
+        android:id="@+id/dificultadesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/para2RadioButton">
+
+        <RadioButton
+            android:id="@+id/para2RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/casi_blanco"
+            android:fontFamily="@font/ubuntu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/rb_pa2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RadioButton
+            android:id="@+id/facilRadioButton"
+            android:layout_width="match_parent"
+            android:textColor="@color/casi_blanco"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/rb_facil" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RadioButton
+            android:id="@+id/normalRadioButton"
+            android:layout_width="match_parent"
+            android:textColor="@color/casi_blanco"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/rb_normal" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/jugarbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_jugar" />
+</LinearLayout>
